@@ -1,0 +1,56 @@
+.container-fluid {
+    background-color: #232323;
+    height: 100vh;
+}
+
+h3 {
+    color: rgb(225, 129, 57);
+    font-weight: bolder;
+    position: relative;
+}
+
+p {
+    color: white;
+}
+
+.main-title::after {
+    color: rgb(225, 129, 57);
+    position: absolute;
+    content: "";
+    left: 0rem;
+    bottom: -0.8rem;
+    background-color: rgb(225, 129, 57);
+    width: 4.4rem;
+    height: 0.2rem;
+}
+
+.kugadk {
+    border: 2px solid rgb(225, 129, 57);
+    border-radius: 2rem;
+}
+
+
+
+
+
+/* responsive */
+@media (max-width:992px) {
+    html {
+        font-size: 70%;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 60%;
+    }
+
+}
+
+@media (max-width:576px) {
+    html {
+        font-size: 55%;
+    }
+
+}

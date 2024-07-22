@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #232323;
+}
+main {
+    background-color: #232323;
+}
+
+.card {
+    background-color: #232323;
+}
+
+footer {
+    background-color: #333333;
+}
+
+
+
+.buttons:hover {
+    background-color: #232323;
+    color: rgb(225, 129, 57);
+}
+
+.logo {
+    width: 10rem;
+}
+
+.img-size {
+    width: 0.3rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.fa-bars {
+    font-size: 2rem;color: white;
+}
+.fa-bars:hover{color: rgb(225, 129, 57);}
+
+.navbar a,
+button {
+    text-transform: capitalize;
+    color: white;
+    font-size: large;
+}
+
+
+.navbar button:hover {
+    background-color: #232323;
+    color: rgb(225, 129, 57);
+    border-color: rgb(225, 129, 57);
+}
+
+.navbar a:hover {
+    color: rgb(225, 129, 57);
+}
+
+
+.kugskzrw {
+    color: rgb(225, 129, 57);
+}
+
+.sec-2 {
+    border: 0.2rem solid rgb(225, 129, 57);
+    height: 30rem;
+}
+
+.main-title {
+    color: rgb(225, 129, 57);
+    position: relative;
+}
+
+.main-title::after {
+    color: rgb(225, 129, 57);
+    position: absolute;
+    content: "";
+    left: 0rem;
+    bottom: -1rem;
+    background-color: rgb(225, 129, 57);
+    width: 4.4rem;
+    height: 0.2rem;
+}
+
+.buttons:hover {
+    border-color: rgb(225, 129, 57);
+    color: rgb(225, 129, 57);
+}
+
+.button-2 {
+    color: rgb(225, 129, 57);
+
+    border-radius: 20rem;
+    border-color: rgb(225, 129, 57);
+    font-weight: bold;
+}
+
+.button-2:hover {
+    color: white;
+    background-color: rgb(225, 129, 57);
+    font-weight: bold;
+    border-color: rgb(225, 129, 57);
+}
+
+.category {
+    color: rgb(225, 129, 57);
+}
+
+.view-all-opt {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgb(222, 191, 133);
+    float: inline-end;
+}
+
+.button-grp:hover {
+    color: white;
+    background-color: rgb(225, 129, 57);
+    box-sizing: content-box;
+
+}
+.card{box-sizing: content-box;}
+.card-text{font-size: 1rem;}
+
+.off-tag1 {
+    font-size: .8rem;
+}
+
+.off-tag {
+    color: rgb(16, 207, 16);
+    font-size: 1rem;
+
+}
+
+.footer-header {
+    color: rgb(225, 129, 57);
+}
+
+.footer-row {
+    color: rgb(225, 129, 57);
+}
+
+.footer-row a {
+    color: white;text-transform: capitalize;
+}
+.footer-row a:hover{text-decoration: underline;}
+
+.cards-manual {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+
+/* responsive css */
+@media (max-width:992px) {
+    html{font-size: 70%;}
+
+}
+
+@media(max-width:768px) {
+    html{font-size: 60%;}
+
+}
+@media (max-width:576px){
+    html{font-size: 50%;}
+
+}
