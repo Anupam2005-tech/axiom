@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
     scroll-behavior: smooth;
     font-size: 100%;
-   
+
+
 }
 
 h1,
@@ -21,6 +24,7 @@ a {
 header {
     background-color: #232323;
 }
+
 main {
     background-color: #232323;
 }
@@ -51,9 +55,13 @@ footer {
 }
 
 .fa-bars {
-    font-size: 2rem;color: white;
+    font-size: 2rem;
+    color: white;
 }
-.fa-bars:hover{color: rgb(225, 129, 57);}
+
+.fa-bars:hover {
+    color: rgb(225, 129, 57);
+}
 
 .navbar a,
 button {
@@ -66,12 +74,53 @@ button {
 .navbar button:hover {
     background-color: #232323;
     color: rgb(225, 129, 57);
-    border-color: rgb(225, 129, 57);
+    border: none;
 }
 
 .navbar a:hover {
     color: rgb(225, 129, 57);
 }
+
+#typing-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgb(225, 129, 57)
+    ;
+    text-align: center;
+    font-family: "Merriweather", serif;
+
+
+}
+
+
+
+#typing-text::after {
+    content: "|";
+    /* cursor character */
+    animation: blink 0.8s step-end infinite;
+ 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgb(225, 129, 57)
+    ;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
 
 
 .kugskzrw {
@@ -136,8 +185,14 @@ button {
     box-sizing: content-box;
 
 }
-.card{box-sizing: content-box;}
-.card-text{font-size: 1rem;}
+
+.card {
+    box-sizing: content-box;
+}
+
+.card-text {
+    font-size: 1rem;
+}
 
 .off-tag1 {
     font-size: .8rem;
@@ -158,9 +213,13 @@ button {
 }
 
 .footer-row a {
-    color: white;text-transform: capitalize;
+    color: white;
+    text-transform: capitalize;
 }
-.footer-row a:hover{text-decoration: underline;}
+
+.footer-row a:hover {
+    text-decoration: underline;
+}
 
 .cards-manual {
     display: -webkit-box;
@@ -173,15 +232,22 @@ button {
 
 /* responsive css */
 @media (max-width:992px) {
-    html{font-size: 70%;}
+    html {
+        font-size: 70%;
+    }
 
 }
 
 @media(max-width:768px) {
-    html{font-size: 60%;}
+    html {
+        font-size: 60%;
+    }
 
 }
-@media (max-width:576px){
-    html{font-size: 50%;}
+
+@media (max-width:576px) {
+    html {
+        font-size: 50%;
+    }
 
 }
