@@ -12,7 +12,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     text-transform: capitalize;
     font-weight: bolder;
 }
@@ -63,23 +64,40 @@ footer {
     color: rgb(225, 129, 57);
 }
 
-.navbar a,
-button {
+
+.navbar a {
     text-transform: capitalize;
     color: white;
     font-size: large;
 }
 
-
-.navbar button:hover {
-    background-color: #232323;
-    color: rgb(225, 129, 57);
-    border: none;
-}
-
 .navbar a:hover {
     color: rgb(225, 129, 57);
 }
+
+.navbar button {
+    color: rgb(225, 129, 57);
+}
+
+.navbar button:hover {
+    color: linear-gradient(to right, #7A288A, #03A9F4, #E31C3D);
+}
+.search-form{margin-left: 8rem;}
+
+.search-bar {
+    width: 22rem;
+    border-radius: 2rem;
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+.search-btn {
+    position: absolute;
+    padding: 0.5rem;
+    transform: translateX(19.5rem);
+}
+
 
 #typing-text {
     background-clip: text;
@@ -87,36 +105,57 @@ button {
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
     font-weight: bold;
-    background-color: rgb(225, 129, 57)
-    ;
+    background-color: rgb(225, 129, 57);
     text-align: center;
     font-family: "Merriweather", serif;
+    animation: blink 1.2s infinite;
 
 
 }
 
-
+@keyframes blink {
+    0% {
+      opacity: 100%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  
 
 #typing-text::after {
     content: "|";
     /* cursor character */
-    animation: blink 0.8s step-end infinite;
- 
+   
+    animation: cursor-blink 1.2s infinite;
+
+
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
     font-weight: bold;
-    background-color: rgb(225, 129, 57)
-    ;
+    background-color: rgb(225, 129, 57);
 }
+
 
 @keyframes blink {
-    50% {
-        opacity: 100%;
+    0% {
+      opacity: 100%;
     }
-}
-
+    50% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  
 
 
 
@@ -230,11 +269,27 @@ button {
 
 
 
+
+
 /* responsive css */
+@media (max-width:1241px) {
+    html {
+        font-size: 70%;
+    }
+    .search-form{margin-left: 8rem;}
+
+
+
+}
 @media (max-width:992px) {
     html {
         font-size: 70%;
     }
+    .search-form{margin-left: 0rem;}
+    .search-btn {
+        padding: 0.1rem;
+    }
+
 
 }
 
@@ -243,11 +298,19 @@ button {
         font-size: 60%;
     }
 
+    .search-btn {
+        padding: 0.1rem;
+    }
+
 }
 
 @media (max-width:576px) {
     html {
         font-size: 50%;
+
     }
 
+    .search-btn {
+        padding: 0.2rem;
+    }
 }
