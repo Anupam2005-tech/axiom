@@ -20,6 +20,7 @@ button {
 
 a {
     text-decoration: none;
+    text-transform: capitalize;
 }
 
 header {
@@ -82,7 +83,10 @@ footer {
 .navbar button:hover {
     color: linear-gradient(to right, #7A288A, #03A9F4, #E31C3D);
 }
-.search-form{margin-left: 8rem;}
+
+.search-form {
+    margin-left: 8rem;
+}
 
 .search-bar {
     width: 22rem;
@@ -115,22 +119,24 @@ footer {
 
 @keyframes blink {
     0% {
-      opacity: 100%;
+        opacity: 100%;
     }
+
     50% {
-      opacity: 0%;
+        opacity: 0%;
     }
+
     100% {
-      opacity: 100%;
+        opacity: 100%;
     }
-  }
-  
-  
+}
+
+
 
 #typing-text::after {
     content: "|";
     /* cursor character */
-   
+
     animation: cursor-blink 1.2s infinite;
 
 
@@ -145,21 +151,17 @@ footer {
 
 @keyframes blink {
     0% {
-      opacity: 100%;
+        opacity: 100%;
     }
+
     50% {
-      opacity: 0%;
+        opacity: 0%;
     }
+
     100% {
-      opacity: 100%;
+        opacity: 100%;
     }
-  }
-  
-  
-
-
-
-
+}
 
 
 .kugskzrw {
@@ -242,6 +244,44 @@ footer {
     font-size: 1rem;
 
 }
+.adv-outer {
+    height: 32rem;
+    width: 100%;
+    position: relative;
+    
+  }
+ 
+  
+  .adv-inner, .adv-button {
+    width: 15rem;
+    position: relative;
+    z-index: 2;
+    background-color: rgb(201, 183, 195);
+    border-radius: 3rem;
+    transform: translateX(1.5rem);
+    
+  }
+  
+  .adv-button:hover {
+    background-color: #a10d26;
+    color: white;
+  }
+  
+  .blur-effect { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #02013842;
+    border-radius: 5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0.5;
+  }
+  
+
 
 .footer-header {
     color: rgb(225, 129, 57);
@@ -272,22 +312,71 @@ footer {
 
 
 /* responsive css */
-@media (max-width:1241px) {
+@media (max-width:1399px) {
+    .search-form {
+        margin-left: 5rem;
+        margin-right: 1rem;
+    }
+   
+    
+    .adv-outer {
+        height: 32rem;
+
+    
+    }
+    .adv-inner,.adv-button {
+    
+        transform: translateX(-0.2rem);
+        width: 15rem;
+        
+    }
+
+}
+@media (max-width:1199px) {
     html {
         font-size: 70%;
     }
-    .search-form{margin-left: 8rem;}
 
+    .search-form {
+        margin-left: 8rem;
+        margin-right: 1rem;
+    }
 
+    .search-btn {
+        padding: 0.9rem;
+    }
+    .adv-outer {
+        height: 32rem;
+
+    
+    }
+    .adv-inner,.adv-button {
+    
+        width: 15rem;   transform: translateX(2rem);
+       
+    }
 
 }
+
 @media (max-width:992px) {
     html {
         font-size: 70%;
     }
-    .search-form{margin-left: 0rem;}
+
+    .search-form {
+        margin-left: 0rem;
+    }
+
     .search-btn {
         padding: 0.1rem;
+    }
+    .adv-outer {
+        height: 28rem;
+    }
+    .adv-inner,.adv-button {
+        width: 12rem;
+        transform: translateX(0.5rem);
+      
     }
 
 
@@ -301,6 +390,19 @@ footer {
     .search-btn {
         padding: 0.1rem;
     }
+    .adv-outer {
+        height: 26rem;
+ 
+    
+    }
+    .adv-inner,.adv-button {
+    
+        width: 11rem;
+        transform: translateX(-0.1rem);
+
+    }
+    
+    
 
 }
 
@@ -313,4 +415,58 @@ footer {
     .search-btn {
         padding: 0.2rem;
     }
+    .adv-outer {
+        height: 32rem;
+        
+ 
+    
+    }
+    .adv-inner,.adv-button {
+    
+        width: 15rem;
+        transform: translateX(-0.5rem);
+     
+
+    }
+    
+    .adv-row{display: flex;justify-content:space-evenly;flex-direction: row;}
+  
+}
+@media (max-width:499px) {
+
+    .adv-outer {
+        height: 30rem;
+        
+ 
+    
+    }
+    .adv-inner,.adv-button {
+    
+        width: 14rem;
+        transform: translateX(-1rem);
+     
+
+    }
+    
+    .adv-row{display: flex;justify-content:space-evenly;flex-direction: row;}
+  
+}
+@media (max-width:399px) {
+
+    .adv-outer {
+        height: 28rem;
+        
+ 
+    
+    }
+    .adv-inner,.adv-button {
+    
+        width: 12rem;
+        transform: translateX(-2rem);
+     
+
+    }
+    
+    .adv-row{display: flex;justify-content:space-evenly;flex-direction: row;}
+  
 }
