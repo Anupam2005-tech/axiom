@@ -154,7 +154,7 @@ footer {
     right: 0;
     bottom: 4em;
     width: 5rem;
-    animation: helper-anime ease-in-out forwards 1.4s;
+    animation: helper-anime ease-in-out forwards 2s;
 }
 
 @keyframes helper-anime {
@@ -289,7 +289,7 @@ footer {
 
 
 .design-part {
-    animation: left-on ease forwards 1.4s;
+    animation: left-on ease forwards 2s;
 }
 
 .kugskzrw {
