@@ -52,7 +52,7 @@ footer {
 }
 
 .logo {
-    width: 10rem;
+    width: 11rem;
 }
 
 .img-size {
@@ -126,13 +126,8 @@ footer {
     color: rgb(225, 129, 57);
 }
 
-.navbar:has(svg):hover {
-    color: rgb(225, 129, 57);
-}
 
-.search-form {
-    margin-left: 8rem;
-}
+
 
 .search-bar {
     width: 22rem;
@@ -755,7 +750,7 @@ footer {
     .helper {
 
         bottom: 16em;
-        width: 7rem;
+        width: 8rem;
 
     }
 
